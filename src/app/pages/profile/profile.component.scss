@@ -1,0 +1,28 @@
+button {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+li {
+  text-align: left;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.profile {
+  position: absolute;
+  margin: 30px;
+  left:  5%;
+  width: 30%;
+  background-color: #E2C9A7;
+  border-style: solid;
+  border-color: peru;
+  border-width: 5px;
+  border-radius: 20px;
+}

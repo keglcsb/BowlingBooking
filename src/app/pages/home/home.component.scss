@@ -1,0 +1,30 @@
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+div button {
+  margin-top: 100px;
+}
+
+app-alley{
+  margin: 50px;
+}
+
+.home_title {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+h1 {
+  padding: 15px 0 0 0;
+  color: #111;
+  font-size: 45px;
+  font-weight: bold;
+}

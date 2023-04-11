@@ -1,0 +1,52 @@
+<span class="loading" *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</span>
+
+<table>
+  <tr>
+    <td>
+      <div class="header">Alley 1</div>
+      <div *ngFor="let booking of alley1.bookings">
+        <mat-card>
+          <div>Reservation start: {{booking.interval.start.hours}}:{{booking.interval.start.minutes >= 10 ? booking.interval.start.minutes : '0' + booking.interval.start.minutes }}</div>
+          <div>End of reservation: {{booking.interval.end.hours}}:{{booking.interval.end.minutes >= 10 ? booking.interval.end.minutes : '0' + booking.interval.end.minutes}}</div>
+          <div>Date: {{booking.date | dateformat}}</div>
+          <div>Reserved for: {{booking.booker}}</div>
+        </mat-card>
+      </div>
+    </td>
+    <td>
+      <div class="header">Alley 2</div>
+      <div *ngFor="let booking of alley2.bookings" >
+        <mat-card>
+          <div>Reservation start: {{booking.interval.start.hours}}:{{minutes}}</div>
+          <div>End of reservation: {{booking.interval.end.hours}}:{{booking.interval.end.minutes + '0'}}</div>
+          <div>Date: {{booking.date | dateformat}}</div>
+          <div>Reserved for: {{booking.booker}}</div>
+        </mat-card>
+      </div>
+    </td>
+    <td>
+      <div class="header">Alley 3</div>
+      <div *ngFor="let booking of alley3.bookings" >
+        <mat-card>
+          <div>Reservation start: {{booking.interval.start.hours}}:{{minutes}}</div>
+          <div>End of reservation: {{booking.interval.end.hours}}:{{booking.interval.end.minutes + '0'}}</div>
+          <div>Date: {{booking.date | dateformat}}</div>
+          <div>Reserved for: {{booking.booker}}</div>
+        </mat-card>
+      </div>
+    </td>
+    <td>
+      <div class="header">Alley 4</div>
+      <div *ngFor="let booking of alley4.bookings" >
+        <mat-card>
+          <div>Reservation start: {{booking.interval.start.hours}}:{{minutes}}</div>
+          <div>End of reservation: {{booking.interval.end.hours}}:{{booking.interval.end.minutes + '0'}}</div>
+          <div>Date: {{booking.date | dateformat}}</div>
+          <div>Reserved for: {{booking.booker}}</div>
+        </mat-card>
+      </div>
+    </td>
+  </tr>
+</table>

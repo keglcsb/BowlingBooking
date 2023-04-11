@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+li div{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+td {
+  vertical-align: top;
+  align-content: start;
+}
+
+.header {
+  position: center;
+  padding: 15px 0 0 0;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+mat-card {
+  margin: 10px;
+  background-color: bisque;
+  border-color: darkorange;
+  border-style: solid;
+  border-width: 0.5px;
+  text-align: left;
+  font-size: 16px;
+}

@@ -1,0 +1,25 @@
+<span >
+  <button class="home" mat-icon-button (click)="goHome()">
+    <mat-icon>
+      home
+    </mat-icon>
+  </button>
+</span>
+<mat-toolbar-row>
+  <span *ngIf="!(currentUser)">
+    <button mat-raised-button color="primary" (click)=login()>Login</button>
+  </span>
+  <span *ngIf="!(currentUser)">
+    <button mat-raised-button color="primary" (click)=signup()>Sign up</button>
+  </span>
+  <span *ngIf="currentUser">
+    <button mat-raised-button color="primary" (click)="logout()">
+      <mat-icon>logout</mat-icon> Log out
+    </button>
+  </span>
+  <span *ngIf="currentUser">
+    <button mat-raised-button (click)="goProfile()">
+      <mat-icon>key</mat-icon> Profile
+    </button>
+  </span>
+</mat-toolbar-row>

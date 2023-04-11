@@ -1,0 +1,22 @@
+form {
+  display: inline-grid;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  margin-top: 5em;
+  height: 80vh;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 40vh;
+}
+
+span span{
+ padding: 15px;
+}
+
+input[type = number]{
+  width: 30%;
+}
+
+

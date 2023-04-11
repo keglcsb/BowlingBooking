@@ -1,0 +1,23 @@
+<span class="loading" *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</span>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <h1>Login</h1>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" type="email" placeholder="Email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput formControlName="password" type="password" placeholder="Password">
+  </mat-form-field>
+  <span>
+    <span>
+      <button mat-raised-button color="accent" type="submit"><mat-icon>login</mat-icon> Login</button>
+      </span>
+    <span>
+      <button mat-raised-button color="warn" (click)="goBack()"><mat-icon>close</mat-icon> Back</button>
+    </span>
+  </span>
+</form>

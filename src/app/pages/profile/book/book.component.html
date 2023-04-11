@@ -1,0 +1,36 @@
+
+<form [formGroup]="bookForm" (ngSubmit)="submit()">
+  <span>
+    <span><mat-label>Reservation start:</mat-label></span>
+    <span><input type="time" formControlName="startTime"></span>
+  </span>
+  <span>
+    <span>
+    <mat-label>Number of Hours:</mat-label>
+    </span>
+    <span>
+      <input type="number" min="1"  formControlName="hours">
+    </span>
+  </span>
+  <span>
+    <mat-checkbox formControlName="alley1">Alley 1</mat-checkbox>
+  </span>
+  <span>
+    <mat-checkbox formControlName="alley2">Alley 2</mat-checkbox>
+  </span>
+  <span>
+    <mat-checkbox formControlName="alley3">Alley 3</mat-checkbox>
+  </span>
+  <span>
+    <mat-checkbox  formControlName="alley4">Alley 4</mat-checkbox>
+  </span>
+  <span>
+    <span>
+      <button mat-raised-button color="accent" type="submit">Book!</button>
+    </span>
+    <span>
+      <button mat-raised-button color="warn" (click)="cancel()"><mat-icon>close</mat-icon> Cancel</button>
+    </span>
+  </span>
+</form>
+

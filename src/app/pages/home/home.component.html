@@ -1,0 +1,6 @@
+
+<div class="home_title">
+  <h1>Bowling Center</h1>
+</div>
+<div><button mat-raised-button color="accent" (click)="showAlley()">Show Alleys</button></div>
+<div *ngIf="showAlleys"><app-alley></app-alley></div>

@@ -1,0 +1,17 @@
+<div class="profile" *ngIf="currentUser">
+  <ul>
+    <li><span>Username: {{currentUser.username}}</span></li>
+    <li><span>Email: {{currentUser.email}}</span></li>
+  </ul>
+</div>
+<div *ngIf="currentUser" class="reservations">
+  <mat-card *ngFor="let booking of currentUser.bookings">
+    <div>Reservation start: {{booking.interval.start.hours}}: {{booking.interval.start.minutes > 10 ? booking.interval.start.minutes : '0' + booking.interval.start.minutes }}</div>
+    <div>End of reservation: {{booking.interval.end.hours}}: {{booking.interval.end.minutes > 10 ? booking.interval.end.minutes : '0' + booking.interval.end.minutes }}</div>
+    <div></div>
+  </mat-card>
+</div>
+
+<div>
+  <button mat-raised-button color="accent" (click)="goBook()">Book a new reservation!</button>
+</div>

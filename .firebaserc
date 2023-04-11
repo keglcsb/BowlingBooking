@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webkeret-bowling": {
+      "hosting": {
+        "bowling-booking": [
+          "webkeret-bowling"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webkeret-bowling"
+  }
+}

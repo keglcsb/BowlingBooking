@@ -1,0 +1,28 @@
+form {
+  display: inline-grid;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  margin-top: 5em;
+  height: 80vh;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+h1 {
+  padding: 10px;
+}
+
+mat-form-field {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 70%;
+  height: 40px;
+  padding: 24px;
+}
+
+span {
+  padding: 30px;
+}

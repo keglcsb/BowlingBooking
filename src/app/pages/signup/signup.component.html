@@ -1,0 +1,31 @@
+<span class="loading" *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</span>
+
+<form [formGroup]="signupForm" (ngSubmit)="signup()">
+  <h1>Sign up</h1>
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input matInput formControlName=username type="text" placeholder="Username">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput formControlName=email type="email" placeholder="Email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput formControlName=password type="password" placeholder="Password">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Password again</mat-label>
+    <input matInput formControlName=repassword type="password" placeholder="Password again">
+  </mat-form-field>
+  <span>
+    <span>
+      <button mat-raised-button color="accent" type="submit"><mat-icon>done</mat-icon> Signup</button>
+    </span>
+    <span>
+      <button mat-raised-button color="warn" (click)="goBack()"><mat-icon>close</mat-icon> Back</button>
+    </span>
+  </span>
+</form>
